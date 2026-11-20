@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## リポジトリの現状
 
-- `C:\Users\PC_User\ClaudeCode` 全体が git リポジトリ（2026/11/20 から、ブランチ `main`）。ノートブックは出力ごとコミットしている。ビルド・テスト・lint の仕組みはない。Python 3.14 + numpy / matplotlib で、Jupyter ノートブックから実行する。
+- `C:\Users\PC_User\ClaudeCode` 全体が git リポジトリ（2026/11/20 から、ブランチ `main`）。リモートは GitHub の private リポジトリ `okapi687/Claude`（`origin`）。ノートブックは出力ごとコミットしている。ビルド・テスト・lint の仕組みはない。Python 3.14 + numpy / matplotlib で、Jupyter ノートブックから実行する。
 - 中身は次のとおり:
   - `研究/model/` — モデルの実装。1ファイル1クラスで、試した版ごとに別ファイルとして残している（下の「コードの構成」を参照）。
   - `研究/MAM_valid.ipynb` — メインのノートブック。可視化、論文の図の再現、スケールフリー相関の解析。整列度・密度などの評価関数は**ノートブックの中に定義されている**（モデル側ではない）。
