@@ -69,6 +69,16 @@ class SoldierCrabSwarm_v1:
     ma_rule : {"sequential", "literal"}, default "sequential"
         "literal" は論文1 p.7 の「同じサイトを狙ったら1体だけ、残りは2番目に人気のサイトへ」を
         文字どおりに実装したもの
+    choose_by : {"vector", "site"}, default "vector"
+        相互予期で人気度が同率のサイトが複数あるとき（式(4)）と、自由移動（式(6)）で、行き先をどう選ぶか。
+        "vector" は遷移の本数で選ぶ（同じサイトを指す遷移が多いサイトほど選ばれやすい。これまでの挙動）。
+        "site" はサイト単位で一様に選ぶ（式(4)の下「そのうち1つをランダムに選ぶ」、式(6)の Rd{集合} どおり）。
+    vm_source : {"theta", "unit_disp", "disp"}, default "theta"
+        速度一致（式(8)）で、近傍の何を平均するか。
+        "theta" は近傍の基本ベクトルの向き（これまでの挙動）。
+        "unit_disp" は近傍の個体の直前の移動の単位ベクトル（留まった個体は除く）。
+        "disp" は近傍の個体の直前の移動ベクトルそのもの（長さも含む。留まった個体は 0）。
+        "unit_disp" と "disp" は式(8)の説明「近傍の平均の速度の向き」の読み方。平均が 0 なら向きを変えない。
 
     paper2 だけで使うもの
     omega : float, default 5.0      ω
@@ -104,6 +114,7 @@ class SoldierCrabSwarm_v1:
                  int_mode=None, seed=None,
                  # paper1
                  R_Nf=2, R_M=3, follow_chain=False, free_wait=False, ma_rule="sequential",
+                 choose_by="vector", vm_source="theta",
                  # paper2
                  omega=5.0, omega_on="velocity", dedupe_votes=True, spv_mode="int_vector",
                  static_vacancy=True, tiebreak="angle",
@@ -122,6 +133,10 @@ class SoldierCrabSwarm_v1:
             raise ValueError(f"int_mode は {self.INT_MODES} のどれか（指定値: {int_mode!r}）")
         if ma_rule not in ("sequential", "literal"):
             raise ValueError(f'ma_rule は "sequential" か "literal"（指定値: {ma_rule!r}）')
+        if choose_by not in ("vector", "site"):
+            raise ValueError(f'choose_by は "vector" か "site"（指定値: {choose_by!r}）')
+        if vm_source not in ("theta", "unit_disp", "disp"):
+            raise ValueError(f'vm_source は "theta" / "unit_disp" / "disp" のどれか（指定値: {vm_source!r}）')
         if omega_on not in ("velocity", "principal"):
             raise ValueError(f'omega_on は "velocity" か "principal"（指定値: {omega_on!r}）')
         if spv_mode not in ("int_vector", "angle"):
@@ -138,6 +153,7 @@ class SoldierCrabSwarm_v1:
         self.alpha_scale = alpha_scale
         self.R_Nf, self.R_M = R_Nf, R_M
         self.follow_chain, self.free_wait, self.ma_rule = follow_chain, free_wait, ma_rule
+        self.choose_by, self.vm_source = choose_by, vm_source
         self.omega, self.omega_on = omega, omega_on
         self.dedupe_votes, self.spv_mode = dedupe_votes, spv_mode
         self.static_vacancy, self.tiebreak = static_vacancy, tiebreak
@@ -325,7 +341,7 @@ class SoldierCrabSwarm_v1:
                     kt = targets[k]
                     vac = occupancy[kt[:, 0], kt[:, 1]] == -1
                     if vac.any():
-                        nx, ny = kt[self.rng.choice(np.flatnonzero(vac))]
+                        nx, ny = self._pick(kt, vac)
                         apply_move(k, nx, ny)
                         cnt[2] += 1
                         any_moved = True
@@ -336,7 +352,7 @@ class SoldierCrabSwarm_v1:
             kt = targets[k]
             vac = occupancy[kt[:, 0], kt[:, 1]] == -1
             if vac.any():
-                nx, ny = kt[self.rng.choice(np.flatnonzero(vac))]
+                nx, ny = self._pick(kt, vac)
                 cnt[2] += 1
             else:
                 nx, ny = self.position[k]           # 空きがなければその場に留まる
@@ -356,7 +372,16 @@ class SoldierCrabSwarm_v1:
         m = cc.max()
         if m < self.c:
             return None
-        return kt[self.rng.choice(np.flatnonzero(cc == m))]   # 同率ならランダム
+        return self._pick(kt, cc == m)                         # 同率ならランダム
+
+    def _pick(self, kt, mask):
+        """遷移先 kt のうち mask が True のものから1つ選ぶ。
+        choose_by="vector" は遷移（本数）単位、"site" はサイト単位で一様に選ぶ"""
+        idx = np.flatnonzero(mask)
+        if self.choose_by == "vector":
+            return kt[self.rng.choice(idx)]
+        sites = np.unique(kt[idx], axis=0)
+        return sites[self.rng.integers(len(sites))]
 
     def _literal_MA_phase(self, targets, z, occupancy, apply_move):
         """ma_rule="literal"：全員が1番人気を狙い、負けたら2番目へ。それでもだめなら相互予期では動かない"""
@@ -388,9 +413,21 @@ class SoldierCrabSwarm_v1:
         return n_moved
 
     def _velocity_matching(self):
-        """速度一致：速度一致近傍（自分を含む）の向きのベクトル平均にそろえる"""
+        """速度一致：速度一致近傍（自分を含む）の向きのベクトル平均にそろえる。
+        何を平均するかは vm_source（"theta"：基本ベクトルの向き、"unit_disp"：移動の単位ベクトル、
+        "disp"：移動ベクトルそのもの）"""
         S = self.S
         new_theta = np.empty(self.N, dtype=float)
+        if self.vm_source == "theta":
+            vec = np.stack([np.cos(self.theta), np.sin(self.theta)], axis=1)
+        else:
+            d = self.last_displacement.astype(float)
+            if self.vm_source == "unit_disp":
+                n = np.linalg.norm(d, axis=1)
+                vec = np.zeros_like(d)
+                vec[n > 0] = d[n > 0] / n[n > 0, None]
+            else:
+                vec = d
         for k in range(self.N):
             x0, y0 = self.position[k]
             occ = self.occupancy[np.mod(x0 + self._dx_M, S), np.mod(y0 + self._dy_M, S)]
@@ -398,8 +435,11 @@ class SoldierCrabSwarm_v1:
             if occ.size == 0:
                 new_theta[k] = self.theta[k]
                 continue
-            a = self.theta[occ]
-            mv = np.array([np.cos(a).mean(), np.sin(a).mean()])
+            if self.vm_source == "theta":
+                a = self.theta[occ]
+                mv = np.array([np.cos(a).mean(), np.sin(a).mean()])   # これまでと同じ計算
+            else:
+                mv = vec[occ].mean(axis=0)
             new_theta[k] = self.theta[k] if np.allclose(mv, 0.0) else np.arctan2(mv[1], mv[0])
         self.theta = new_theta
 

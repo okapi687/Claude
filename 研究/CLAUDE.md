@@ -55,6 +55,7 @@ swarm.position                                 # (N, 2) の整数座標。S×S �
 
 - `ex_v2`: `int_mode`（floor / ceil / round / trunc / stochastic）、`ma_rule`（sequential / literal）、`follow_chain`（追従の連鎖を許すか）、`free_wait`
 - `Murakami`: `int_mode`（初期値 round）、`dedupe_votes`、`spv_mode`、`static_vacancy`、`tiebreak`
+- `v1`: 上の2つに加えて、`alpha_scale`（α の範囲を何倍に読むか、既定 1）、論文1の `choose_by`（同率サイト・自由移動を遷移単位 "vector" かサイト単位 "site" で選ぶ、既定 "vector"）、`vm_source`（速度一致で平均するもの："theta" 基本ベクトルの向き＝既定、"unit_disp" 移動の単位ベクトル、"disp" 移動ベクトルそのもの）
 
 floor にすると遷移ベクトルが平均 (−0.5, −0.5) だけ左下にずれる。2つの最新版で `int_mode` の初期値が違う（ex_v2 は floor、Murakami は round）ことに注意。
 
