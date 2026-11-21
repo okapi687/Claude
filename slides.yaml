@@ -1,0 +1,38 @@
+presentation:
+  title: タイトル
+  presenter:
+    affiliation: 電気通信大学 情報理工学域 一類 経営社会情報学プログラム
+    name: 片岡 直己
+  slides:
+    - number: 1
+      layout: タイトルスライド
+      title: タイトル
+      subtitle:
+        所属: 電気通信大学 情報理工学域 一類 経営社会情報学プログラム
+        氏名: 片岡 直己
+
+    - number: 2
+      layout: タイトルとコンテンツ
+      title: 前回までに行ったこと
+      content:
+        - モデル検証
+
+    - number: 3
+      layout: セクション見出し
+      title: トピック
+      content: []
+
+    - number: 4
+      layout: セクション見出し
+      title: 終わりに
+      content: []
+
+    - number: 5
+      layout: タイトルとコンテンツ
+      title: 今後の方針
+      content:
+        - モデルのまとめ
+        - 時計の完成と体長の大きい個体の実装
+      notes: |
+        本と論文でも書いてあることが違いそう（パラメータやモデルの処理など）
+        論文を第一に信用するでOK？
