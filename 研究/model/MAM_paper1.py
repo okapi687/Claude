@@ -66,6 +66,10 @@ class CrabSwarmPaper1:
         True にすると、追従した個体が空けたサイトにも追従できる（旧版 MAM_basic_ex の挙動）
     free_wait : bool, default False
         True にすると、自由移動で行き先がふさがっている個体が、前の個体が動いて空くまで待つ
+    popularity : {"individual", "transition"}, default "individual"
+        人気度（式(3)）の数え方。"individual" はそのサイトを遷移先に含む個体の数（同じ個体は1票、v1 と同じ）。
+        "transition" は遷移の本数（p.7「the number of transitions reaching that site」の文面どおり）。
+        "transition" だと、1体の遷移が2本重なるだけで人気度 2 になる（11/24 追加）
 
     Attributes
     ----------
@@ -80,7 +84,7 @@ class CrabSwarmPaper1:
 
     def __init__(self, N=100, S=50, L=4.0, P=15, alpha=0.5, c=2, R_Nf=2, R_M=3, seed=None,
                  alpha_scale=1.0, int_mode="floor", vm_source="theta", ma_rule="sequential",
-                 choose_by="vector", follow_chain=False, free_wait=False):
+                 choose_by="vector", follow_chain=False, free_wait=False, popularity="individual"):
         if int_mode not in self.INT_MODES:
             raise ValueError(f"int_mode は {self.INT_MODES} のどれか（指定値: {int_mode!r}）")
         if ma_rule not in ("sequential", "literal"):
@@ -89,6 +93,8 @@ class CrabSwarmPaper1:
             raise ValueError(f'choose_by は "vector" か "site"（指定値: {choose_by!r}）')
         if vm_source not in ("theta", "unit_disp", "disp"):
             raise ValueError(f'vm_source は "theta" / "unit_disp" / "disp" のどれか（指定値: {vm_source!r}）')
+        if popularity not in ("individual", "transition"):
+            raise ValueError(f'popularity は "individual" か "transition"（指定値: {popularity!r}）')
         if N > S * S:
             raise ValueError(f"N({N}) が格子点の総数 S*S({S*S}) を超えています。")
 
@@ -98,6 +104,7 @@ class CrabSwarmPaper1:
         self.alpha_scale, self.int_mode, self.vm_source = alpha_scale, int_mode, vm_source
         self.ma_rule, self.choose_by = ma_rule, choose_by
         self.follow_chain, self.free_wait = follow_chain, free_wait
+        self.popularity = popularity
         self.t = 0
 
         # ---- 初期配置：重なりのないランダムな格子点、向きは一様乱数 ----
@@ -169,7 +176,11 @@ class CrabSwarmPaper1:
         N, P, _ = targets.shape
         flat_x = targets[:, :, 0].ravel()
         flat_y = targets[:, :, 1].ravel()
-        triples = np.unique(np.stack([np.repeat(np.arange(N), P), flat_x, flat_y], axis=1), axis=0)
+        if self.popularity == "transition":         # 遷移の本数で数える（p.7 の文面どおり）
+            z = np.zeros((self.S, self.S), dtype=int)
+            np.add.at(z, (flat_x, flat_y), 1)
+            return z
+        triples =np.unique(np.stack([np.repeat(np.arange(N), P), flat_x, flat_y], axis=1), axis=0)
         z = np.zeros((self.S, self.S), dtype=int)
         np.add.at(z, (triples[:, 1], triples[:, 2]), 1)
         return z
