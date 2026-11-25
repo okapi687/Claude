@@ -1,7 +1,7 @@
 """11/23 の先生への報告資料（PowerPoint）を作る。引数: 出力 pptx
 - base_theme.pptx：ゼミ資料.thmx（PowerPoint の「木版活字」テーマ）を PowerPoint で当てた空のプレゼンテーション
 - 各トピックは「問題 → やったこと → 結果」の順（3列のスライド）と、結果の詳しいスライドの2枚組
-- 図は ../report_fig と ./img から読む
+- 図は ../検証/report_fig と ./img から読む
 """
 import os, sys, copy
 from pptx import Presentation
@@ -13,7 +13,7 @@ from pptx.oxml.ns import qn
 from lxml import etree
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FIG = os.path.join(os.path.dirname(HERE), "report_fig")
+FIG = os.path.join(os.path.dirname(HERE), "検証", "report_fig")
 IMG = os.path.join(HERE, "img")
 
 INK = RGBColor(0x32, 0x32, 0x32)
