@@ -7,7 +7,9 @@
   omega : 図S3  P=40・α=0.2・ω=0〜10、10シード、1500 ステップ
   pair  : 図4b・図S2b  N=2、P=40・α=0.2、30000 ステップ、5シード（位置とルール）
   trio  : 図S4（付録の説明では Figure S3）  N=3、同じ条件、30000 ステップ、5シード
-使い方: python planN_paper2_sim.py [出力フォルダ]   （既定は report_data/planN/）
+使い方: python planN_paper2_sim.py [出力フォルダ] [設定]   （既定は report_data/planN/ と "best"）
+  11/25：α 1倍と比べるため、設定（PRESETS の名前）を選べるようにした。
+  α 1倍：python planN_paper2_sim.py ../report_data/planN_x1 murakami（α そのまま・round・ω 式どおり。best と違うのは α だけ）
 """
 import sys, os
 from pathlib import Path
@@ -18,7 +20,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parents[1]))          # 研究/
 from model.MAM_paper2 import CrabSwarmPaper2, PRESETS, CONDITIONS, polarization2, density_paper2  # noqa: E402
 
-BEST = PRESETS["best"]
+BEST = PRESETS[sys.argv[2] if len(sys.argv) > 2 else "best"]
 T_MAIN, T_PAIR = 1500, 30000
 
 

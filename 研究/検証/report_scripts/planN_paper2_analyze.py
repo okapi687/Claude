@@ -7,9 +7,12 @@
   図S3（t=1500 の整列度）：ω=0 → 0.10、1 → 0.70、2 → 0.93、3 → 0.93、5 → 0.95、8 → 0.55、10 → 0.73
 力の地図（図4b,c）は論文の Methods どおり：加速度 = v(t) − v(t−1)、向き = v(t−1)、相対的な向きは 0〜45°、
   ビンは向き 20° 幅を 5° ずつ、距離 2 幅を 0.5 ずつずらして重ねる（検証/05 の 3.8 節と同じ）
-使い方: python planN_paper2_analyze.py
+使い方: python planN_paper2_analyze.py [データのフォルダ名] [x1]
+  既定は report_data/planN（ベスト）で fig36〜40。11/25 に α 1倍との比較用に引数を足した：
+  python planN_paper2_analyze.py planN_x1 x1 で、α 1倍の同じ図を fig41〜45 として作る
 """
 import json
+import sys
 from pathlib import Path
 import numpy as np
 import matplotlib
@@ -19,7 +22,12 @@ from matplotlib.colors import TwoSlopeNorm
 
 plt.rcParams["font.family"] = ["Yu Gothic", "Meiryo", "MS Gothic", "sans-serif"]
 HERE = Path(__file__).resolve().parent
-DATA = HERE.parent / "report_data" / "planN"
+DATA = HERE.parent / "report_data" / (sys.argv[1] if len(sys.argv) > 1 else "planN")
+TAG = sys.argv[2] if len(sys.argv) > 2 else "best"
+SETTING = {"best": "ベスト：α 2倍・round・ω 式どおり", "x1": "α 1倍：α そのまま・round・ω 式どおり"}[TAG]
+SHORT = {"best": "ベスト（α 2倍）", "x1": "α 1倍"}[TAG]
+NO = {"best": (36, 37, 38, 39, 40), "x1": (41, 42, 43, 44, 45)}[TAG]
+STEM = {"best": "planN", "x1": "planN_x1"}[TAG]
 FIG = HERE.parent / "report_fig"
 S, L = 50, 6
 T_DIST = {3: 4.303, 5: 2.776, 10: 2.262}
@@ -73,8 +81,8 @@ for i, P in enumerate(Ps):
             ax.set_title(f"α={a}")
         if j == 0:
             ax.set_ylabel(f"P={P}")
-fig.suptitle("fig36　図3a と同じ格子（ベスト：α 2倍・round・ω 式どおり、seed 0 の t=1500、3ステップの軌跡）\n下の数字：整列度（t=1000〜1500、5シードの平均 ± 95% 信頼区間）", fontsize=10)
-fig.tight_layout(); fig.savefig(FIG / "fig36_planN_fig3a.png", dpi=110); plt.close(fig)
+fig.suptitle(f"fig{NO[0]}　図3a と同じ格子（{SETTING}、seed 0 の t=1500、3ステップの軌跡）\n下の数字：整列度（t=1000〜1500、5シードの平均 ± 95% 信頼区間）", fontsize=10)
+fig.tight_layout(); fig.savefig(FIG / f"fig{NO[0]}_{STEM}_fig3a.png", dpi=110); plt.close(fig)
 
 # ---------------------------------------------------------------- 図3b,c・図S2a（fig37）
 tm = load("time")
@@ -121,8 +129,8 @@ for nm in names:
 ax[0, 2].text(0, 0.95, txt, va="top", fontsize=10)
 for k, nm_ in enumerate(("図S2a1：相互予期の個体数", "図S2a2：追従の個体数", "図S2a3：自由移動の個体数")):
     ax[1, k].set_title(nm_ + "（10 ステップ移動平均）"); ax[1, k].set_ylim(-2, 102); ax[1, k].set_xlabel("time step")
-fig.suptitle("fig37　図3b,c と図S2a（ベスト：α 2倍・round・ω 式どおり）", fontsize=11)
-fig.tight_layout(); fig.savefig(FIG / "fig37_planN_fig3bc_S2a.png", dpi=110); plt.close(fig)
+fig.suptitle(f"fig{NO[1]}　図3b,c と図S2a（{SETTING}）", fontsize=11)
+fig.tight_layout(); fig.savefig(FIG / f"fig{NO[1]}_{STEM}_fig3bc_S2a.png", dpi=110); plt.close(fig)
 
 # ---------------------------------------------------------------- 図S3（fig38）
 om = load("omega")
@@ -142,8 +150,8 @@ for a_, P_, D_, ttl in ((ax[0], pe, de, "t=1500 の値（論文と同じ）"), (
     a_.plot(list(FIGS3), list(FIGS3.values()), "k*", ms=12, label="論文の整列度")
     a_.set_ylim(0, 1.05); a2.set_ylim(1.5, 5); a_.set_xlabel("ω"); a_.set_ylabel("整列度", color="tab:red"); a2.set_ylabel("密度", color="tab:blue")
     a_.set_title(ttl); a_.legend(loc="lower center", fontsize=8); a_.grid(alpha=0.3)
-fig.suptitle("fig38　図S3：ω を変えたとき（P=40、α=0.2、ベスト、10シードの平均 ± 95% 信頼区間）", fontsize=11)
-fig.tight_layout(); fig.savefig(FIG / "fig38_planN_figS3.png", dpi=110); plt.close(fig)
+fig.suptitle(f"fig{NO[2]}　図S3：ω を変えたとき（P=40、α=0.2、{SHORT}、10シードの平均 ± 95% 信頼区間）", fontsize=11)
+fig.tight_layout(); fig.savefig(FIG / f"fig{NO[2]}_{STEM}_figS3.png", dpi=110); plt.close(fig)
 
 
 # ---------------------------------------------------------------- 2体・3体の力
@@ -237,8 +245,8 @@ a_.bar(x - 0.2, [m[0] for m in mr], 0.4, yerr=[m[1] for m in mr], capsize=4, col
 a_.bar(x + 0.2, FIGS2B, 0.4, color="0.8", edgecolor="k", label="論文 図S2b")
 a_.set_xticks(x); a_.set_xticklabels(["相互予期", "追従", "自由移動"]); a_.set_ylim(0, 1); a_.legend(fontsize=8)
 a_.set_title(f"図S2b：2体のルールの割合\n整列度 {SUMMARY['pair']['pol'][0]:.2f}（論文 約 0.9）、平均距離 {SUMMARY['pair']['dist'][0]:.1f}")
-fig.suptitle("fig39　2体（N=2、P=40、α=0.2、ベスト、30000 ステップ × 5シード）：図4b,c と図S2b", fontsize=11)
-fig.tight_layout(); fig.savefig(FIG / "fig39_planN_pair.png", dpi=110); plt.close(fig)
+fig.suptitle(f"fig{NO[3]}　2体（N=2、P=40、α=0.2、{SHORT}、30000 ステップ × 5シード）：図4b,c と図S2b", fontsize=11)
+fig.tight_layout(); fig.savefig(FIG / f"fig{NO[3]}_{STEM}_pair.png", dpi=110); plt.close(fig)
 
 # 3体（図S4）：両隣の位置を focal の向きに射影した 2次元の地図。予測は2体の力（距離だけの関数）の平均
 trio = load("trio")
@@ -290,8 +298,8 @@ for r_, (comp, lab) in enumerate((("speed", "前後の距離"), ("turn", "左右
         plt.colorbar(im, ax=ax[r_, c_])
         ax[r_, c_].set_title(f"{'加速' if comp == 'speed' else '旋回'}の力：{ttl}")
         ax[r_, c_].set_xlabel(f"{lab} N1"); ax[r_, c_].set_ylabel(f"{lab} N2")
-fig.suptitle("fig40　3体（図S4、付録の説明では Figure S3）：N=3、P=40、α=0.2、ベスト、30000 ステップ × 5シード", fontsize=11)
-fig.tight_layout(); fig.savefig(FIG / "fig40_planN_trio.png", dpi=110); plt.close(fig)
+fig.suptitle(f"fig{NO[4]}　3体（図S4、付録の説明では Figure S3）：N=3、P=40、α=0.2、{SHORT}、30000 ステップ × 5シード", fontsize=11)
+fig.tight_layout(); fig.savefig(FIG / f"fig{NO[4]}_{STEM}_trio.png", dpi=110); plt.close(fig)
 
 json.dump(SUMMARY, open(DATA / "summary.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(json.dumps(SUMMARY, ensure_ascii=False, indent=1))
