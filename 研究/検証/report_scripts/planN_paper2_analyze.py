@@ -10,6 +10,7 @@
 使い方: python planN_paper2_analyze.py [データのフォルダ名] [x1]
   既定は report_data/planN（ベスト）で fig36〜40。11/25 に α 1倍との比較用に引数を足した：
   python planN_paper2_analyze.py planN_x1 x1 で、α 1倍の同じ図を fig41〜45 として作る
+  11/26：python planN_paper2_analyze.py planR_flow flow で、流れ図どおり（計画R）の同じ図を fig49〜53 として作る
 """
 import json
 import sys
@@ -24,10 +25,11 @@ plt.rcParams["font.family"] = ["Yu Gothic", "Meiryo", "MS Gothic", "sans-serif"]
 HERE = Path(__file__).resolve().parent
 DATA = HERE.parent / "report_data" / (sys.argv[1] if len(sys.argv) > 1 else "planN")
 TAG = sys.argv[2] if len(sys.argv) > 2 else "best"
-SETTING = {"best": "ベスト：α 2倍・round・ω 式どおり", "x1": "α 1倍：α そのまま・round・ω 式どおり"}[TAG]
-SHORT = {"best": "ベスト（α 2倍）", "x1": "α 1倍"}[TAG]
-NO = {"best": (36, 37, 38, 39, 40), "x1": (41, 42, 43, 44, 45)}[TAG]
-STEM = {"best": "planN", "x1": "planN_x1"}[TAG]
+SETTING = {"best": "ベスト：α 2倍・round・ω 式どおり", "x1": "α 1倍：α そのまま・round・ω 式どおり",
+           "flow": "流れ図どおり：α 2倍・round・ω 式どおり・相互予期はサイト中心"}[TAG]
+SHORT = {"best": "ベスト（α 2倍）", "x1": "α 1倍", "flow": "流れ図どおり（α 2倍）"}[TAG]
+NO = {"best": (36, 37, 38, 39, 40), "x1": (41, 42, 43, 44, 45), "flow": (49, 50, 51, 52, 53)}[TAG]
+STEM = {"best": "planN", "x1": "planN_x1", "flow": "planR_flow"}[TAG]
 FIG = HERE.parent / "report_fig"
 S, L = 50, 6
 T_DIST = {3: 4.303, 5: 2.776, 10: 2.262}

@@ -10,6 +10,8 @@
 使い方: python planN_paper2_sim.py [出力フォルダ] [設定]   （既定は report_data/planN/ と "best"）
   11/25：α 1倍と比べるため、設定（PRESETS の名前）を選べるようにした。
   α 1倍：python planN_paper2_sim.py ../report_data/planN_x1 murakami（α そのまま・round・ω 式どおり。best と違うのは α だけ）
+  11/26：流れ図どおり（計画R の「流れ図どおり（全部）」：相互予期をサイト中心、追従はサイトごと、自由移動は遷移単位）で回せるようにした。
+  python planN_paper2_sim.py ../report_data/planR_flow flow（α 2倍・round・ω 式どおりは best と同じ）
 """
 import sys, os
 from pathlib import Path
@@ -20,13 +22,20 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parents[1]))          # 研究/
 from model.MAM_paper2 import CrabSwarmPaper2, PRESETS, CONDITIONS, polarization2, density_paper2  # noqa: E402
 
-BEST = PRESETS[sys.argv[2] if len(sys.argv) > 2 else "best"]
+SETTING = sys.argv[2] if len(sys.argv) > 2 else "best"
+if SETTING == "flow":
+    from planR_flowchart import Flow  # noqa: E402
+    BEST = dict(PRESETS["best"], ma_mode="site", ma_pick="angle", follow_mode="site", free_mode="vector")
+    Model = Flow
+else:
+    BEST = PRESETS[SETTING]
+    Model = CrabSwarmPaper2
 T_MAIN, T_PAIR = 1500, 30000
 
 
 def run_main(job):
     kind, key, P, alpha, omega, seed = job
-    m = CrabSwarmPaper2(P=P, alpha=alpha, omega=omega, seed=seed, **BEST)
+    m = Model(P=P, alpha=alpha, omega=omega, seed=seed, **BEST)
     pol, dens, rules, last = [], [], [], []
     for t in range(T_MAIN):
         m.step()
@@ -42,7 +51,7 @@ def run_main(job):
 
 def run_small(job):
     kind, N, seed = job
-    m = CrabSwarmPaper2(N=N, P=40, alpha=0.2, seed=seed, **BEST)
+    m = Model(N=N, P=40, alpha=0.2, seed=seed, **BEST)
     pos = np.zeros((T_PAIR + 1, N, 2), np.int16)
     pos[0] = m.position
     rules = np.zeros(4)

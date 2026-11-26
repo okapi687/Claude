@@ -11,9 +11,13 @@ ma_mode（相互予期）
   "seq"     : 今のモデル。ランダムな順に1体ずつ、人気度 ≥ c の空きサイトのうち一番人気へ
   "site"    : 流れ図どおり。まだ取られていない空きサイトのうち、人気度（ステップの最初に数えたもの）が一番高いサイトを選び、
               そこへ遷移を向けている、まだ動いていない個体の1体が入る。これを人気度 ≥ c のサイトがなくなるまでくり返す。
-              同じ人気度のサイトの順はランダム
+              同じ人気度のサイトの順は site_tie で決める
   "site_recount" : "site" で、人気度を「まだ動いていない個体の票」だけで数え直す
               （動いた個体の残りの遷移は、もう人気度に入れない、と読む）
+site_tie（"site" のとき、同じ人気度のサイトをどの順に処理するか。11/26 その5 で足した）
+  "angle"   : そのサイトへの遷移の向きが基本ベクトルに一番近い（まだ動いていない個体の中で）サイトから。
+              付録の式(8) の後ろの文「同率のサイトが複数あれば、向きが基本ベクトルに一番近い遷移のサイトを選ぶ」どおり
+  "random"  : ランダムな順（11/26 その4 の最初の版。2体では、重なったサイトがどれも人気度 2 なので、行き先がほぼランダムになる）
 ma_pick（"site" のとき、どの個体が入るか）
   "angle"   : そのサイトへの遷移の向きが、基本ベクトルに一番近い個体（本文 p.4。付録の式(8) の後ろの文）
   "random"  : ランダムに1体（流れ図は「An agent moves」としか書いていない）
@@ -37,21 +41,24 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parents[1]))          # 研究/
 from model.MAM_paper2 import CrabSwarmPaper2, PRESETS, CONDITIONS, polarization2, density_paper2  # noqa: E402
 
-BASE = dict(ma_mode="seq", ma_pick="angle", follow_mode="indiv", free_mode="site")
+BASE = dict(ma_mode="seq", ma_pick="angle", site_tie="angle", follow_mode="indiv", free_mode="site")
 VARIANTS = {
     "今のモデル": dict(),
     "相互予期をサイト中心に": dict(ma_mode="site"),
+    "サイト中心・同率のサイトはランダムな順": dict(ma_mode="site", site_tie="random"),
     "サイト中心・入る個体はランダム": dict(ma_mode="site", ma_pick="random"),
     "サイト中心・人気度を数え直す": dict(ma_mode="site_recount"),
     "自由移動を遷移単位で": dict(free_mode="vector"),
     "流れ図どおり（全部）": dict(ma_mode="site", follow_mode="site", free_mode="vector"),
     "流れ図どおり・数え直す": dict(ma_mode="site_recount", follow_mode="site", free_mode="vector"),
+    "流れ図どおり・同率のサイトはランダムな順": dict(ma_mode="site", site_tie="random", follow_mode="site", free_mode="vector"),
 }
 
 
 class Flow(CrabSwarmPaper2):
-    def __init__(self, ma_mode="seq", ma_pick="angle", follow_mode="indiv", free_mode="site", **kw):
+    def __init__(self, ma_mode="seq", ma_pick="angle", site_tie="angle", follow_mode="indiv", free_mode="site", **kw):
         self.ma_mode, self.ma_pick, self.follow_mode, self.free_mode = ma_mode, ma_pick, follow_mode, free_mode
+        self.site_tie = site_tie
         super().__init__(**kw)
         self.rule = np.full(self.N, 3)
 
@@ -106,24 +113,30 @@ class Flow(CrabSwarmPaper2):
                     if k not in d or ang[k, i] < d[k]:
                         d[k] = ang[k, i]
             recount = self.ma_mode == "site_recount"
+            by_angle = self.site_tie == "angle"
             heap = []
             for s, d in reach.items():
                 p = len(d) if recount else int(z[s])
                 if p >= c:
-                    heap.append((-p, self.rng.random(), s))
+                    heap.append((-p, min(d.values()) if by_angle else 0.0, self.rng.random(), s))
             heapq.heapify(heap)
             moved = np.zeros(N, dtype=bool)
             while heap:
-                negp, r, s = heapq.heappop(heap)
+                negp, amin0, r, s = heapq.heappop(heap)
                 if taken[s]:
                     continue
                 cand = [(v, k) for k, v in reach[s].items() if not moved[k]]
-                if recount and len(cand) < -negp:    # 票が減っていたら、数え直した人気度で入れ直す
-                    if len(cand) >= c:
-                        heapq.heappush(heap, (-len(cand), r, s))
-                    continue
                 if not cand:
                     continue
+                if recount and len(cand) < -negp:    # 票が減っていたら、数え直した人気度で入れ直す
+                    if len(cand) >= c:
+                        heapq.heappush(heap, (-len(cand), min(v for v, _ in cand) if by_angle else 0.0, r, s))
+                    continue
+                if by_angle:                         # 一番近い個体が先に動いていたら、角度を直して入れ直す
+                    a_now = min(v for v, _ in cand)
+                    if a_now > amin0 + 1e-9:
+                        heapq.heappush(heap, (negp, a_now, r, s))
+                        continue
                 if self.ma_pick == "angle":
                     amin = min(v for v, _ in cand)
                     cand = [(v, k) for v, k in cand if v <= amin + 1e-9]
@@ -203,7 +216,7 @@ def run(job):
                 rules=(cnt / cnt.sum()).tolist(), fan=rms)
 
 
-LONG_VARIANTS = ["今のモデル", "相互予期をサイト中心に", "流れ図どおり（全部）"]
+LONG_VARIANTS = ["今のモデル", "相互予期をサイト中心に", "流れ図どおり（全部）", "流れ図どおり・同率のサイトはランダムな順"]
 LONG_T = 3000
 
 
