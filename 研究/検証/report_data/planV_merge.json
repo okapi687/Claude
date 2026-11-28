@@ -1,0 +1,3362 @@
+[
+ {
+  "var": "今の一番よい版",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.538,
+    "stayIso": 0.0,
+    "clusters": 63,
+    "big": 28
+   },
+   {
+    "t0": 680,
+    "pol": 0.445,
+    "stayIso": 0.0,
+    "clusters": 50,
+    "big": 38
+   },
+   {
+    "t0": 1220,
+    "pol": 0.549,
+    "stayIso": 0.0,
+    "clusters": 57,
+    "big": 24
+   }
+  ]
+ },
+ {
+  "var": "今の一番よい版",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.491,
+    "stayIso": 0.0,
+    "clusters": 57,
+    "big": 32
+   },
+   {
+    "t0": 680,
+    "pol": 0.581,
+    "stayIso": 0.0,
+    "clusters": 51,
+    "big": 42
+   },
+   {
+    "t0": 1220,
+    "pol": 0.507,
+    "stayIso": 0.0,
+    "clusters": 64,
+    "big": 22
+   }
+  ]
+ },
+ {
+  "var": "今の一番よい版",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.154,
+    "stayIso": 0.0,
+    "clusters": 87,
+    "big": 26
+   },
+   {
+    "t0": 680,
+    "pol": 0.159,
+    "stayIso": 0.0,
+    "clusters": 82,
+    "big": 32
+   },
+   {
+    "t0": 1220,
+    "pol": 0.103,
+    "stayIso": 0.0,
+    "clusters": 87,
+    "big": 21
+   }
+  ]
+ },
+ {
+  "var": "今の一番よい版",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.087,
+    "stayIso": 0.0,
+    "clusters": 87,
+    "big": 25
+   },
+   {
+    "t0": 680,
+    "pol": 0.255,
+    "stayIso": 0.0,
+    "clusters": 76,
+    "big": 33
+   },
+   {
+    "t0": 1220,
+    "pol": 0.107,
+    "stayIso": 0.0,
+    "clusters": 88,
+    "big": 18
+   }
+  ]
+ },
+ {
+  "var": "今の一番よい版",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.077,
+    "stayIso": 0.0,
+    "clusters": 110,
+    "big": 11
+   },
+   {
+    "t0": 680,
+    "pol": 0.088,
+    "stayIso": 0.0,
+    "clusters": 102,
+    "big": 14
+   },
+   {
+    "t0": 1220,
+    "pol": 0.073,
+    "stayIso": 0.0,
+    "clusters": 103,
+    "big": 17
+   }
+  ]
+ },
+ {
+  "var": "今の一番よい版",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.102,
+    "stayIso": 0.0,
+    "clusters": 107,
+    "big": 13
+   },
+   {
+    "t0": 680,
+    "pol": 0.085,
+    "stayIso": 0.0,
+    "clusters": 100,
+    "big": 15
+   },
+   {
+    "t0": 1220,
+    "pol": 0.082,
+    "stayIso": 0.0,
+    "clusters": 109,
+    "big": 11
+   }
+  ]
+ },
+ {
+  "var": "今の一番よい版",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.072,
+    "stayIso": 0.0,
+    "clusters": 109,
+    "big": 10
+   },
+   {
+    "t0": 680,
+    "pol": 0.057,
+    "stayIso": 0.0,
+    "clusters": 106,
+    "big": 13
+   },
+   {
+    "t0": 1220,
+    "pol": 0.057,
+    "stayIso": 0.0,
+    "clusters": 102,
+    "big": 13
+   }
+  ]
+ },
+ {
+  "var": "今の一番よい版",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.065,
+    "stayIso": 0.0,
+    "clusters": 109,
+    "big": 15
+   },
+   {
+    "t0": 680,
+    "pol": 0.063,
+    "stayIso": 0.0,
+    "clusters": 96,
+    "big": 19
+   },
+   {
+    "t0": 1220,
+    "pol": 0.062,
+    "stayIso": 0.0,
+    "clusters": 95,
+    "big": 21
+   }
+  ]
+ },
+ {
+  "var": "1個体1票",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.61,
+    "stayIso": 0.0,
+    "clusters": 26,
+    "big": 63
+   },
+   {
+    "t0": 680,
+    "pol": 0.569,
+    "stayIso": 0.0,
+    "clusters": 28,
+    "big": 40
+   },
+   {
+    "t0": 1220,
+    "pol": 0.607,
+    "stayIso": 0.0,
+    "clusters": 24,
+    "big": 65
+   }
+  ]
+ },
+ {
+  "var": "1個体1票",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.703,
+    "stayIso": 0.0,
+    "clusters": 23,
+    "big": 44
+   },
+   {
+    "t0": 680,
+    "pol": 0.552,
+    "stayIso": 0.0,
+    "clusters": 22,
+    "big": 67
+   },
+   {
+    "t0": 1220,
+    "pol": 0.602,
+    "stayIso": 0.0,
+    "clusters": 34,
+    "big": 47
+   }
+  ]
+ },
+ {
+  "var": "1個体1票",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.246,
+    "stayIso": 0.0,
+    "clusters": 58,
+    "big": 35
+   },
+   {
+    "t0": 680,
+    "pol": 0.145,
+    "stayIso": 0.0,
+    "clusters": 57,
+    "big": 28
+   },
+   {
+    "t0": 1220,
+    "pol": 0.338,
+    "stayIso": 0.0,
+    "clusters": 57,
+    "big": 42
+   }
+  ]
+ },
+ {
+  "var": "1個体1票",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.105,
+    "stayIso": 0.0,
+    "clusters": 58,
+    "big": 36
+   },
+   {
+    "t0": 680,
+    "pol": 0.172,
+    "stayIso": 0.0,
+    "clusters": 60,
+    "big": 31
+   },
+   {
+    "t0": 1220,
+    "pol": 0.114,
+    "stayIso": 0.0,
+    "clusters": 54,
+    "big": 42
+   }
+  ]
+ },
+ {
+  "var": "1個体1票",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.079,
+    "stayIso": 0.0,
+    "clusters": 84,
+    "big": 24
+   },
+   {
+    "t0": 680,
+    "pol": 0.072,
+    "stayIso": 0.0,
+    "clusters": 78,
+    "big": 20
+   },
+   {
+    "t0": 1220,
+    "pol": 0.083,
+    "stayIso": 0.0,
+    "clusters": 82,
+    "big": 19
+   }
+  ]
+ },
+ {
+  "var": "1個体1票",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.132,
+    "stayIso": 0.0,
+    "clusters": 79,
+    "big": 27
+   },
+   {
+    "t0": 680,
+    "pol": 0.075,
+    "stayIso": 0.0,
+    "clusters": 82,
+    "big": 24
+   },
+   {
+    "t0": 1220,
+    "pol": 0.102,
+    "stayIso": 0.0,
+    "clusters": 84,
+    "big": 21
+   }
+  ]
+ },
+ {
+  "var": "1個体1票",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.06,
+    "stayIso": 0.0,
+    "clusters": 81,
+    "big": 20
+   },
+   {
+    "t0": 680,
+    "pol": 0.059,
+    "stayIso": 0.0,
+    "clusters": 86,
+    "big": 19
+   },
+   {
+    "t0": 1220,
+    "pol": 0.058,
+    "stayIso": 0.0,
+    "clusters": 73,
+    "big": 38
+   }
+  ]
+ },
+ {
+  "var": "1個体1票",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.072,
+    "stayIso": 0.0,
+    "clusters": 78,
+    "big": 35
+   },
+   {
+    "t0": 680,
+    "pol": 0.062,
+    "stayIso": 0.0,
+    "clusters": 78,
+    "big": 31
+   },
+   {
+    "t0": 1220,
+    "pol": 0.073,
+    "stayIso": 0.0,
+    "clusters": 66,
+    "big": 56
+   }
+  ]
+ },
+ {
+  "var": "θ で速度一致",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.76,
+    "stayIso": 0.0,
+    "clusters": 10,
+    "big": 160
+   },
+   {
+    "t0": 680,
+    "pol": 0.864,
+    "stayIso": 0.0,
+    "clusters": 36,
+    "big": 135
+   },
+   {
+    "t0": 1220,
+    "pol": 0.867,
+    "stayIso": 0.0,
+    "clusters": 47,
+    "big": 104
+   }
+  ]
+ },
+ {
+  "var": "θ で速度一致",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.775,
+    "stayIso": 0.0,
+    "clusters": 32,
+    "big": 50
+   },
+   {
+    "t0": 680,
+    "pol": 0.862,
+    "stayIso": 0.0,
+    "clusters": 37,
+    "big": 98
+   },
+   {
+    "t0": 1220,
+    "pol": 0.865,
+    "stayIso": 0.0,
+    "clusters": 59,
+    "big": 63
+   }
+  ]
+ },
+ {
+  "var": "θ で速度一致",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.625,
+    "stayIso": 0.0,
+    "clusters": 20,
+    "big": 59
+   },
+   {
+    "t0": 680,
+    "pol": 0.661,
+    "stayIso": 0.0,
+    "clusters": 20,
+    "big": 149
+   },
+   {
+    "t0": 1220,
+    "pol": 0.67,
+    "stayIso": 0.0,
+    "clusters": 21,
+    "big": 174
+   }
+  ]
+ },
+ {
+  "var": "θ で速度一致",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.618,
+    "stayIso": 0.0,
+    "clusters": 24,
+    "big": 122
+   },
+   {
+    "t0": 680,
+    "pol": 0.669,
+    "stayIso": 0.0,
+    "clusters": 35,
+    "big": 131
+   },
+   {
+    "t0": 1220,
+    "pol": 0.666,
+    "stayIso": 0.0,
+    "clusters": 42,
+    "big": 146
+   }
+  ]
+ },
+ {
+  "var": "θ で速度一致",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.37,
+    "stayIso": 0.0,
+    "clusters": 24,
+    "big": 118
+   },
+   {
+    "t0": 680,
+    "pol": 0.437,
+    "stayIso": 0.0,
+    "clusters": 19,
+    "big": 179
+   },
+   {
+    "t0": 1220,
+    "pol": 0.443,
+    "stayIso": 0.0,
+    "clusters": 12,
+    "big": 188
+   }
+  ]
+ },
+ {
+  "var": "θ で速度一致",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.378,
+    "stayIso": 0.0,
+    "clusters": 19,
+    "big": 58
+   },
+   {
+    "t0": 680,
+    "pol": 0.449,
+    "stayIso": 0.0,
+    "clusters": 13,
+    "big": 140
+   },
+   {
+    "t0": 1220,
+    "pol": 0.451,
+    "stayIso": 0.0,
+    "clusters": 21,
+    "big": 138
+   }
+  ]
+ },
+ {
+  "var": "θ で速度一致",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.072,
+    "stayIso": 0.0,
+    "clusters": 25,
+    "big": 67
+   },
+   {
+    "t0": 680,
+    "pol": 0.221,
+    "stayIso": 0.0,
+    "clusters": 15,
+    "big": 105
+   },
+   {
+    "t0": 1220,
+    "pol": 0.216,
+    "stayIso": 0.0,
+    "clusters": 8,
+    "big": 126
+   }
+  ]
+ },
+ {
+  "var": "θ で速度一致",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.165,
+    "stayIso": 0.0,
+    "clusters": 23,
+    "big": 64
+   },
+   {
+    "t0": 680,
+    "pol": 0.214,
+    "stayIso": 0.0,
+    "clusters": 7,
+    "big": 114
+   },
+   {
+    "t0": 1220,
+    "pol": 0.213,
+    "stayIso": 0.0,
+    "clusters": 9,
+    "big": 113
+   }
+  ]
+ },
+ {
+  "var": "単位ベクトルで速度一致",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.245,
+    "stayIso": 0.0,
+    "clusters": 49,
+    "big": 57
+   },
+   {
+    "t0": 680,
+    "pol": 0.495,
+    "stayIso": 0.0,
+    "clusters": 64,
+    "big": 33
+   },
+   {
+    "t0": 1220,
+    "pol": 0.459,
+    "stayIso": 0.0,
+    "clusters": 57,
+    "big": 52
+   }
+  ]
+ },
+ {
+  "var": "単位ベクトルで速度一致",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.469,
+    "stayIso": 0.0,
+    "clusters": 52,
+    "big": 48
+   },
+   {
+    "t0": 680,
+    "pol": 0.455,
+    "stayIso": 0.0,
+    "clusters": 52,
+    "big": 45
+   },
+   {
+    "t0": 1220,
+    "pol": 0.509,
+    "stayIso": 0.0,
+    "clusters": 52,
+    "big": 54
+   }
+  ]
+ },
+ {
+  "var": "単位ベクトルで速度一致",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.132,
+    "stayIso": 0.0,
+    "clusters": 86,
+    "big": 22
+   },
+   {
+    "t0": 680,
+    "pol": 0.11,
+    "stayIso": 0.0,
+    "clusters": 83,
+    "big": 30
+   },
+   {
+    "t0": 1220,
+    "pol": 0.165,
+    "stayIso": 0.0,
+    "clusters": 86,
+    "big": 21
+   }
+  ]
+ },
+ {
+  "var": "単位ベクトルで速度一致",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.204,
+    "stayIso": 0.0,
+    "clusters": 83,
+    "big": 18
+   },
+   {
+    "t0": 680,
+    "pol": 0.18,
+    "stayIso": 0.0,
+    "clusters": 84,
+    "big": 27
+   },
+   {
+    "t0": 1220,
+    "pol": 0.165,
+    "stayIso": 0.0,
+    "clusters": 80,
+    "big": 20
+   }
+  ]
+ },
+ {
+  "var": "単位ベクトルで速度一致",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.087,
+    "stayIso": 0.0,
+    "clusters": 104,
+    "big": 10
+   },
+   {
+    "t0": 680,
+    "pol": 0.076,
+    "stayIso": 0.0,
+    "clusters": 106,
+    "big": 15
+   },
+   {
+    "t0": 1220,
+    "pol": 0.071,
+    "stayIso": 0.0,
+    "clusters": 105,
+    "big": 15
+   }
+  ]
+ },
+ {
+  "var": "単位ベクトルで速度一致",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.079,
+    "stayIso": 0.0,
+    "clusters": 109,
+    "big": 13
+   },
+   {
+    "t0": 680,
+    "pol": 0.073,
+    "stayIso": 0.0,
+    "clusters": 100,
+    "big": 20
+   },
+   {
+    "t0": 1220,
+    "pol": 0.071,
+    "stayIso": 0.0,
+    "clusters": 102,
+    "big": 15
+   }
+  ]
+ },
+ {
+  "var": "単位ベクトルで速度一致",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.063,
+    "stayIso": 0.0,
+    "clusters": 101,
+    "big": 19
+   },
+   {
+    "t0": 680,
+    "pol": 0.067,
+    "stayIso": 0.0,
+    "clusters": 109,
+    "big": 12
+   },
+   {
+    "t0": 1220,
+    "pol": 0.088,
+    "stayIso": 0.0,
+    "clusters": 94,
+    "big": 18
+   }
+  ]
+ },
+ {
+  "var": "単位ベクトルで速度一致",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.078,
+    "stayIso": 0.0,
+    "clusters": 103,
+    "big": 13
+   },
+   {
+    "t0": 680,
+    "pol": 0.077,
+    "stayIso": 0.0,
+    "clusters": 104,
+    "big": 14
+   },
+   {
+    "t0": 1220,
+    "pol": 0.065,
+    "stayIso": 0.0,
+    "clusters": 100,
+    "big": 18
+   }
+  ]
+ },
+ {
+  "var": "R(M)=2",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.258,
+    "stayIso": 0.0,
+    "clusters": 85,
+    "big": 21
+   },
+   {
+    "t0": 680,
+    "pol": 0.225,
+    "stayIso": 0.0,
+    "clusters": 77,
+    "big": 21
+   },
+   {
+    "t0": 1220,
+    "pol": 0.175,
+    "stayIso": 0.0,
+    "clusters": 84,
+    "big": 14
+   }
+  ]
+ },
+ {
+  "var": "R(M)=2",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.183,
+    "stayIso": 0.0,
+    "clusters": 83,
+    "big": 24
+   },
+   {
+    "t0": 680,
+    "pol": 0.401,
+    "stayIso": 0.0,
+    "clusters": 83,
+    "big": 26
+   },
+   {
+    "t0": 1220,
+    "pol": 0.407,
+    "stayIso": 0.0,
+    "clusters": 89,
+    "big": 26
+   }
+  ]
+ },
+ {
+  "var": "R(M)=2",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.101,
+    "stayIso": 0.0,
+    "clusters": 103,
+    "big": 13
+   },
+   {
+    "t0": 680,
+    "pol": 0.075,
+    "stayIso": 0.0,
+    "clusters": 106,
+    "big": 11
+   },
+   {
+    "t0": 1220,
+    "pol": 0.074,
+    "stayIso": 0.0,
+    "clusters": 109,
+    "big": 10
+   }
+  ]
+ },
+ {
+  "var": "R(M)=2",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.113,
+    "stayIso": 0.0,
+    "clusters": 103,
+    "big": 14
+   },
+   {
+    "t0": 680,
+    "pol": 0.062,
+    "stayIso": 0.0,
+    "clusters": 110,
+    "big": 13
+   },
+   {
+    "t0": 1220,
+    "pol": 0.093,
+    "stayIso": 0.0,
+    "clusters": 104,
+    "big": 16
+   }
+  ]
+ },
+ {
+  "var": "R(M)=2",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.081,
+    "stayIso": 0.0,
+    "clusters": 115,
+    "big": 10
+   },
+   {
+    "t0": 680,
+    "pol": 0.061,
+    "stayIso": 0.0,
+    "clusters": 117,
+    "big": 8
+   },
+   {
+    "t0": 1220,
+    "pol": 0.072,
+    "stayIso": 0.0,
+    "clusters": 115,
+    "big": 9
+   }
+  ]
+ },
+ {
+  "var": "R(M)=2",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.055,
+    "stayIso": 0.0,
+    "clusters": 112,
+    "big": 11
+   },
+   {
+    "t0": 680,
+    "pol": 0.069,
+    "stayIso": 0.0,
+    "clusters": 117,
+    "big": 9
+   },
+   {
+    "t0": 1220,
+    "pol": 0.072,
+    "stayIso": 0.0,
+    "clusters": 117,
+    "big": 9
+   }
+  ]
+ },
+ {
+  "var": "R(M)=2",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.065,
+    "stayIso": 0.0,
+    "clusters": 104,
+    "big": 15
+   },
+   {
+    "t0": 680,
+    "pol": 0.061,
+    "stayIso": 0.0,
+    "clusters": 104,
+    "big": 13
+   },
+   {
+    "t0": 1220,
+    "pol": 0.056,
+    "stayIso": 0.0,
+    "clusters": 104,
+    "big": 16
+   }
+  ]
+ },
+ {
+  "var": "R(M)=2",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.068,
+    "stayIso": 0.0,
+    "clusters": 105,
+    "big": 12
+   },
+   {
+    "t0": 680,
+    "pol": 0.066,
+    "stayIso": 0.0,
+    "clusters": 98,
+    "big": 18
+   },
+   {
+    "t0": 1220,
+    "pol": 0.058,
+    "stayIso": 0.0,
+    "clusters": 91,
+    "big": 38
+   }
+  ]
+ },
+ {
+  "var": "R(Nf)=5",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.362,
+    "stayIso": 0.0,
+    "clusters": 52,
+    "big": 38
+   },
+   {
+    "t0": 680,
+    "pol": 0.514,
+    "stayIso": 0.0,
+    "clusters": 58,
+    "big": 29
+   },
+   {
+    "t0": 1220,
+    "pol": 0.575,
+    "stayIso": 0.0,
+    "clusters": 44,
+    "big": 29
+   }
+  ]
+ },
+ {
+  "var": "R(Nf)=5",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.513,
+    "stayIso": 0.0,
+    "clusters": 43,
+    "big": 33
+   },
+   {
+    "t0": 680,
+    "pol": 0.638,
+    "stayIso": 0.0,
+    "clusters": 51,
+    "big": 35
+   },
+   {
+    "t0": 1220,
+    "pol": 0.458,
+    "stayIso": 0.0,
+    "clusters": 47,
+    "big": 57
+   }
+  ]
+ },
+ {
+  "var": "R(Nf)=5",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.114,
+    "stayIso": 0.0,
+    "clusters": 64,
+    "big": 28
+   },
+   {
+    "t0": 680,
+    "pol": 0.16,
+    "stayIso": 0.0,
+    "clusters": 68,
+    "big": 30
+   },
+   {
+    "t0": 1220,
+    "pol": 0.19,
+    "stayIso": 0.0,
+    "clusters": 55,
+    "big": 63
+   }
+  ]
+ },
+ {
+  "var": "R(Nf)=5",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.175,
+    "stayIso": 0.0,
+    "clusters": 67,
+    "big": 31
+   },
+   {
+    "t0": 680,
+    "pol": 0.172,
+    "stayIso": 0.0,
+    "clusters": 66,
+    "big": 27
+   },
+   {
+    "t0": 1220,
+    "pol": 0.18,
+    "stayIso": 0.0,
+    "clusters": 71,
+    "big": 22
+   }
+  ]
+ },
+ {
+  "var": "R(Nf)=5",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.078,
+    "stayIso": 0.0,
+    "clusters": 77,
+    "big": 33
+   },
+   {
+    "t0": 680,
+    "pol": 0.085,
+    "stayIso": 0.0,
+    "clusters": 83,
+    "big": 13
+   },
+   {
+    "t0": 1220,
+    "pol": 0.083,
+    "stayIso": 0.0,
+    "clusters": 76,
+    "big": 22
+   }
+  ]
+ },
+ {
+  "var": "R(Nf)=5",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.101,
+    "stayIso": 0.0,
+    "clusters": 74,
+    "big": 25
+   },
+   {
+    "t0": 680,
+    "pol": 0.092,
+    "stayIso": 0.0,
+    "clusters": 79,
+    "big": 18
+   },
+   {
+    "t0": 1220,
+    "pol": 0.103,
+    "stayIso": 0.0,
+    "clusters": 76,
+    "big": 23
+   }
+  ]
+ },
+ {
+  "var": "R(Nf)=5",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.062,
+    "stayIso": 0.0,
+    "clusters": 66,
+    "big": 38
+   },
+   {
+    "t0": 680,
+    "pol": 0.064,
+    "stayIso": 0.0,
+    "clusters": 64,
+    "big": 31
+   },
+   {
+    "t0": 1220,
+    "pol": 0.071,
+    "stayIso": 0.0,
+    "clusters": 72,
+    "big": 20
+   }
+  ]
+ },
+ {
+  "var": "R(Nf)=5",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.067,
+    "stayIso": 0.0,
+    "clusters": 72,
+    "big": 26
+   },
+   {
+    "t0": 680,
+    "pol": 0.06,
+    "stayIso": 0.0,
+    "clusters": 61,
+    "big": 33
+   },
+   {
+    "t0": 1220,
+    "pol": 0.065,
+    "stayIso": 0.0,
+    "clusters": 67,
+    "big": 23
+   }
+  ]
+ },
+ {
+  "var": "追従の連鎖",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.497,
+    "stayIso": 0.0,
+    "clusters": 48,
+    "big": 39
+   },
+   {
+    "t0": 680,
+    "pol": 0.224,
+    "stayIso": 0.0,
+    "clusters": 58,
+    "big": 26
+   },
+   {
+    "t0": 1220,
+    "pol": 0.417,
+    "stayIso": 0.0,
+    "clusters": 55,
+    "big": 46
+   }
+  ]
+ },
+ {
+  "var": "追従の連鎖",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.501,
+    "stayIso": 0.0,
+    "clusters": 61,
+    "big": 55
+   },
+   {
+    "t0": 680,
+    "pol": 0.395,
+    "stayIso": 0.0,
+    "clusters": 55,
+    "big": 35
+   },
+   {
+    "t0": 1220,
+    "pol": 0.464,
+    "stayIso": 0.0,
+    "clusters": 45,
+    "big": 51
+   }
+  ]
+ },
+ {
+  "var": "追従の連鎖",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.118,
+    "stayIso": 0.0,
+    "clusters": 81,
+    "big": 41
+   },
+   {
+    "t0": 680,
+    "pol": 0.106,
+    "stayIso": 0.0,
+    "clusters": 85,
+    "big": 18
+   },
+   {
+    "t0": 1220,
+    "pol": 0.177,
+    "stayIso": 0.0,
+    "clusters": 90,
+    "big": 17
+   }
+  ]
+ },
+ {
+  "var": "追従の連鎖",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.127,
+    "stayIso": 0.0,
+    "clusters": 80,
+    "big": 21
+   },
+   {
+    "t0": 680,
+    "pol": 0.12,
+    "stayIso": 0.0,
+    "clusters": 90,
+    "big": 20
+   },
+   {
+    "t0": 1220,
+    "pol": 0.154,
+    "stayIso": 0.0,
+    "clusters": 74,
+    "big": 30
+   }
+  ]
+ },
+ {
+  "var": "追従の連鎖",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.085,
+    "stayIso": 0.0,
+    "clusters": 108,
+    "big": 13
+   },
+   {
+    "t0": 680,
+    "pol": 0.068,
+    "stayIso": 0.0,
+    "clusters": 104,
+    "big": 14
+   },
+   {
+    "t0": 1220,
+    "pol": 0.084,
+    "stayIso": 0.0,
+    "clusters": 105,
+    "big": 13
+   }
+  ]
+ },
+ {
+  "var": "追従の連鎖",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.085,
+    "stayIso": 0.0,
+    "clusters": 109,
+    "big": 12
+   },
+   {
+    "t0": 680,
+    "pol": 0.069,
+    "stayIso": 0.0,
+    "clusters": 111,
+    "big": 11
+   },
+   {
+    "t0": 1220,
+    "pol": 0.071,
+    "stayIso": 0.0,
+    "clusters": 105,
+    "big": 12
+   }
+  ]
+ },
+ {
+  "var": "追従の連鎖",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.068,
+    "stayIso": 0.0,
+    "clusters": 101,
+    "big": 17
+   },
+   {
+    "t0": 680,
+    "pol": 0.061,
+    "stayIso": 0.0,
+    "clusters": 103,
+    "big": 14
+   },
+   {
+    "t0": 1220,
+    "pol": 0.06,
+    "stayIso": 0.0,
+    "clusters": 101,
+    "big": 23
+   }
+  ]
+ },
+ {
+  "var": "追従の連鎖",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.07,
+    "stayIso": 0.0,
+    "clusters": 99,
+    "big": 15
+   },
+   {
+    "t0": 680,
+    "pol": 0.058,
+    "stayIso": 0.0,
+    "clusters": 100,
+    "big": 16
+   },
+   {
+    "t0": 1220,
+    "pol": 0.064,
+    "stayIso": 0.0,
+    "clusters": 103,
+    "big": 12
+   }
+  ]
+ },
+ {
+  "var": "自由移動で待つ",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.538,
+    "stayIso": 0.0,
+    "clusters": 63,
+    "big": 28
+   },
+   {
+    "t0": 680,
+    "pol": 0.445,
+    "stayIso": 0.0,
+    "clusters": 50,
+    "big": 38
+   },
+   {
+    "t0": 1220,
+    "pol": 0.549,
+    "stayIso": 0.0,
+    "clusters": 57,
+    "big": 24
+   }
+  ]
+ },
+ {
+  "var": "自由移動で待つ",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.491,
+    "stayIso": 0.0,
+    "clusters": 57,
+    "big": 32
+   },
+   {
+    "t0": 680,
+    "pol": 0.581,
+    "stayIso": 0.0,
+    "clusters": 51,
+    "big": 42
+   },
+   {
+    "t0": 1220,
+    "pol": 0.507,
+    "stayIso": 0.0,
+    "clusters": 64,
+    "big": 22
+   }
+  ]
+ },
+ {
+  "var": "自由移動で待つ",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.154,
+    "stayIso": 0.0,
+    "clusters": 87,
+    "big": 26
+   },
+   {
+    "t0": 680,
+    "pol": 0.159,
+    "stayIso": 0.0,
+    "clusters": 82,
+    "big": 32
+   },
+   {
+    "t0": 1220,
+    "pol": 0.103,
+    "stayIso": 0.0,
+    "clusters": 87,
+    "big": 21
+   }
+  ]
+ },
+ {
+  "var": "自由移動で待つ",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.087,
+    "stayIso": 0.0,
+    "clusters": 87,
+    "big": 25
+   },
+   {
+    "t0": 680,
+    "pol": 0.255,
+    "stayIso": 0.0,
+    "clusters": 76,
+    "big": 33
+   },
+   {
+    "t0": 1220,
+    "pol": 0.107,
+    "stayIso": 0.0,
+    "clusters": 88,
+    "big": 18
+   }
+  ]
+ },
+ {
+  "var": "自由移動で待つ",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.077,
+    "stayIso": 0.0,
+    "clusters": 110,
+    "big": 11
+   },
+   {
+    "t0": 680,
+    "pol": 0.088,
+    "stayIso": 0.0,
+    "clusters": 102,
+    "big": 14
+   },
+   {
+    "t0": 1220,
+    "pol": 0.073,
+    "stayIso": 0.0,
+    "clusters": 103,
+    "big": 17
+   }
+  ]
+ },
+ {
+  "var": "自由移動で待つ",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.102,
+    "stayIso": 0.0,
+    "clusters": 107,
+    "big": 13
+   },
+   {
+    "t0": 680,
+    "pol": 0.085,
+    "stayIso": 0.0,
+    "clusters": 100,
+    "big": 15
+   },
+   {
+    "t0": 1220,
+    "pol": 0.082,
+    "stayIso": 0.0,
+    "clusters": 109,
+    "big": 11
+   }
+  ]
+ },
+ {
+  "var": "自由移動で待つ",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.072,
+    "stayIso": 0.0,
+    "clusters": 109,
+    "big": 10
+   },
+   {
+    "t0": 680,
+    "pol": 0.057,
+    "stayIso": 0.0,
+    "clusters": 106,
+    "big": 13
+   },
+   {
+    "t0": 1220,
+    "pol": 0.057,
+    "stayIso": 0.0,
+    "clusters": 102,
+    "big": 13
+   }
+  ]
+ },
+ {
+  "var": "自由移動で待つ",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.065,
+    "stayIso": 0.0,
+    "clusters": 109,
+    "big": 15
+   },
+   {
+    "t0": 680,
+    "pol": 0.063,
+    "stayIso": 0.0,
+    "clusters": 96,
+    "big": 19
+   },
+   {
+    "t0": 1220,
+    "pol": 0.062,
+    "stayIso": 0.0,
+    "clusters": 95,
+    "big": 21
+   }
+  ]
+ },
+ {
+  "var": "サイト単位で選ぶ",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.595,
+    "stayIso": 0.0,
+    "clusters": 49,
+    "big": 76
+   },
+   {
+    "t0": 680,
+    "pol": 0.32,
+    "stayIso": 0.0,
+    "clusters": 52,
+    "big": 36
+   },
+   {
+    "t0": 1220,
+    "pol": 0.514,
+    "stayIso": 0.0,
+    "clusters": 48,
+    "big": 34
+   }
+  ]
+ },
+ {
+  "var": "サイト単位で選ぶ",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.509,
+    "stayIso": 0.0,
+    "clusters": 51,
+    "big": 27
+   },
+   {
+    "t0": 680,
+    "pol": 0.437,
+    "stayIso": 0.0,
+    "clusters": 50,
+    "big": 37
+   },
+   {
+    "t0": 1220,
+    "pol": 0.426,
+    "stayIso": 0.0,
+    "clusters": 56,
+    "big": 31
+   }
+  ]
+ },
+ {
+  "var": "サイト単位で選ぶ",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.276,
+    "stayIso": 0.0,
+    "clusters": 67,
+    "big": 43
+   },
+   {
+    "t0": 680,
+    "pol": 0.122,
+    "stayIso": 0.0,
+    "clusters": 77,
+    "big": 24
+   },
+   {
+    "t0": 1220,
+    "pol": 0.19,
+    "stayIso": 0.0,
+    "clusters": 78,
+    "big": 19
+   }
+  ]
+ },
+ {
+  "var": "サイト単位で選ぶ",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.099,
+    "stayIso": 0.0,
+    "clusters": 83,
+    "big": 27
+   },
+   {
+    "t0": 680,
+    "pol": 0.111,
+    "stayIso": 0.0,
+    "clusters": 80,
+    "big": 27
+   },
+   {
+    "t0": 1220,
+    "pol": 0.263,
+    "stayIso": 0.0,
+    "clusters": 67,
+    "big": 63
+   }
+  ]
+ },
+ {
+  "var": "サイト単位で選ぶ",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.069,
+    "stayIso": 0.0,
+    "clusters": 102,
+    "big": 13
+   },
+   {
+    "t0": 680,
+    "pol": 0.051,
+    "stayIso": 0.0,
+    "clusters": 98,
+    "big": 15
+   },
+   {
+    "t0": 1220,
+    "pol": 0.092,
+    "stayIso": 0.0,
+    "clusters": 104,
+    "big": 12
+   }
+  ]
+ },
+ {
+  "var": "サイト単位で選ぶ",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.085,
+    "stayIso": 0.0,
+    "clusters": 105,
+    "big": 13
+   },
+   {
+    "t0": 680,
+    "pol": 0.07,
+    "stayIso": 0.0,
+    "clusters": 103,
+    "big": 14
+   },
+   {
+    "t0": 1220,
+    "pol": 0.074,
+    "stayIso": 0.0,
+    "clusters": 100,
+    "big": 18
+   }
+  ]
+ },
+ {
+  "var": "サイト単位で選ぶ",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.058,
+    "stayIso": 0.0,
+    "clusters": 98,
+    "big": 16
+   },
+   {
+    "t0": 680,
+    "pol": 0.068,
+    "stayIso": 0.0,
+    "clusters": 96,
+    "big": 18
+   },
+   {
+    "t0": 1220,
+    "pol": 0.069,
+    "stayIso": 0.0,
+    "clusters": 105,
+    "big": 12
+   }
+  ]
+ },
+ {
+  "var": "サイト単位で選ぶ",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.064,
+    "stayIso": 0.0,
+    "clusters": 100,
+    "big": 23
+   },
+   {
+    "t0": 680,
+    "pol": 0.062,
+    "stayIso": 0.0,
+    "clusters": 101,
+    "big": 16
+   },
+   {
+    "t0": 1220,
+    "pol": 0.051,
+    "stayIso": 0.0,
+    "clusters": 94,
+    "big": 17
+   }
+  ]
+ },
+ {
+  "var": "競合を文字どおり",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.107,
+    "stayIso": 0.0,
+    "clusters": 85,
+    "big": 21
+   },
+   {
+    "t0": 680,
+    "pol": 0.28,
+    "stayIso": 0.0,
+    "clusters": 84,
+    "big": 16
+   },
+   {
+    "t0": 1220,
+    "pol": 0.153,
+    "stayIso": 0.0,
+    "clusters": 84,
+    "big": 19
+   }
+  ]
+ },
+ {
+  "var": "競合を文字どおり",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.213,
+    "stayIso": 0.0,
+    "clusters": 89,
+    "big": 15
+   },
+   {
+    "t0": 680,
+    "pol": 0.184,
+    "stayIso": 0.0,
+    "clusters": 78,
+    "big": 21
+   },
+   {
+    "t0": 1220,
+    "pol": 0.146,
+    "stayIso": 0.0,
+    "clusters": 82,
+    "big": 26
+   }
+  ]
+ },
+ {
+  "var": "競合を文字どおり",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.142,
+    "stayIso": 0.0,
+    "clusters": 99,
+    "big": 14
+   },
+   {
+    "t0": 680,
+    "pol": 0.111,
+    "stayIso": 0.0,
+    "clusters": 99,
+    "big": 12
+   },
+   {
+    "t0": 1220,
+    "pol": 0.134,
+    "stayIso": 0.0,
+    "clusters": 98,
+    "big": 17
+   }
+  ]
+ },
+ {
+  "var": "競合を文字どおり",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.116,
+    "stayIso": 0.0,
+    "clusters": 99,
+    "big": 16
+   },
+   {
+    "t0": 680,
+    "pol": 0.075,
+    "stayIso": 0.0,
+    "clusters": 103,
+    "big": 11
+   },
+   {
+    "t0": 1220,
+    "pol": 0.094,
+    "stayIso": 0.0,
+    "clusters": 102,
+    "big": 13
+   }
+  ]
+ },
+ {
+  "var": "競合を文字どおり",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.078,
+    "stayIso": 0.0,
+    "clusters": 108,
+    "big": 11
+   },
+   {
+    "t0": 680,
+    "pol": 0.076,
+    "stayIso": 0.0,
+    "clusters": 107,
+    "big": 11
+   },
+   {
+    "t0": 1220,
+    "pol": 0.069,
+    "stayIso": 0.0,
+    "clusters": 111,
+    "big": 10
+   }
+  ]
+ },
+ {
+  "var": "競合を文字どおり",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.084,
+    "stayIso": 0.0,
+    "clusters": 106,
+    "big": 12
+   },
+   {
+    "t0": 680,
+    "pol": 0.066,
+    "stayIso": 0.0,
+    "clusters": 110,
+    "big": 11
+   },
+   {
+    "t0": 1220,
+    "pol": 0.065,
+    "stayIso": 0.0,
+    "clusters": 108,
+    "big": 11
+   }
+  ]
+ },
+ {
+  "var": "競合を文字どおり",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.066,
+    "stayIso": 0.0,
+    "clusters": 101,
+    "big": 15
+   },
+   {
+    "t0": 680,
+    "pol": 0.069,
+    "stayIso": 0.0,
+    "clusters": 96,
+    "big": 20
+   },
+   {
+    "t0": 1220,
+    "pol": 0.069,
+    "stayIso": 0.0,
+    "clusters": 101,
+    "big": 17
+   }
+  ]
+ },
+ {
+  "var": "競合を文字どおり",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.064,
+    "stayIso": 0.0,
+    "clusters": 108,
+    "big": 12
+   },
+   {
+    "t0": 680,
+    "pol": 0.056,
+    "stayIso": 0.0,
+    "clusters": 110,
+    "big": 13
+   },
+   {
+    "t0": 1220,
+    "pol": 0.068,
+    "stayIso": 0.0,
+    "clusters": 96,
+    "big": 49
+   }
+  ]
+ },
+ {
+  "var": "相互予期をサイト中心に",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.662,
+    "stayIso": 0.0,
+    "clusters": 60,
+    "big": 29
+   },
+   {
+    "t0": 680,
+    "pol": 0.659,
+    "stayIso": 0.0,
+    "clusters": 58,
+    "big": 42
+   },
+   {
+    "t0": 1220,
+    "pol": 0.709,
+    "stayIso": 0.0,
+    "clusters": 69,
+    "big": 29
+   }
+  ]
+ },
+ {
+  "var": "相互予期をサイト中心に",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.609,
+    "stayIso": 0.0,
+    "clusters": 67,
+    "big": 25
+   },
+   {
+    "t0": 680,
+    "pol": 0.726,
+    "stayIso": 0.0,
+    "clusters": 56,
+    "big": 31
+   },
+   {
+    "t0": 1220,
+    "pol": 0.687,
+    "stayIso": 0.0,
+    "clusters": 68,
+    "big": 25
+   }
+  ]
+ },
+ {
+  "var": "相互予期をサイト中心に",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.26,
+    "stayIso": 0.0,
+    "clusters": 82,
+    "big": 27
+   },
+   {
+    "t0": 680,
+    "pol": 0.349,
+    "stayIso": 0.0,
+    "clusters": 71,
+    "big": 37
+   },
+   {
+    "t0": 1220,
+    "pol": 0.325,
+    "stayIso": 0.0,
+    "clusters": 75,
+    "big": 31
+   }
+  ]
+ },
+ {
+  "var": "相互予期をサイト中心に",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.196,
+    "stayIso": 0.0,
+    "clusters": 79,
+    "big": 26
+   },
+   {
+    "t0": 680,
+    "pol": 0.273,
+    "stayIso": 0.0,
+    "clusters": 69,
+    "big": 36
+   },
+   {
+    "t0": 1220,
+    "pol": 0.38,
+    "stayIso": 0.0,
+    "clusters": 78,
+    "big": 32
+   }
+  ]
+ },
+ {
+  "var": "相互予期をサイト中心に",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.119,
+    "stayIso": 0.0,
+    "clusters": 100,
+    "big": 14
+   },
+   {
+    "t0": 680,
+    "pol": 0.161,
+    "stayIso": 0.0,
+    "clusters": 95,
+    "big": 28
+   },
+   {
+    "t0": 1220,
+    "pol": 0.127,
+    "stayIso": 0.0,
+    "clusters": 97,
+    "big": 15
+   }
+  ]
+ },
+ {
+  "var": "相互予期をサイト中心に",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.108,
+    "stayIso": 0.0,
+    "clusters": 98,
+    "big": 16
+   },
+   {
+    "t0": 680,
+    "pol": 0.15,
+    "stayIso": 0.0,
+    "clusters": 99,
+    "big": 18
+   },
+   {
+    "t0": 1220,
+    "pol": 0.141,
+    "stayIso": 0.0,
+    "clusters": 90,
+    "big": 23
+   }
+  ]
+ },
+ {
+  "var": "相互予期をサイト中心に",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.094,
+    "stayIso": 0.0,
+    "clusters": 111,
+    "big": 10
+   },
+   {
+    "t0": 680,
+    "pol": 0.111,
+    "stayIso": 0.0,
+    "clusters": 110,
+    "big": 10
+   },
+   {
+    "t0": 1220,
+    "pol": 0.069,
+    "stayIso": 0.0,
+    "clusters": 114,
+    "big": 11
+   }
+  ]
+ },
+ {
+  "var": "相互予期をサイト中心に",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.104,
+    "stayIso": 0.0,
+    "clusters": 107,
+    "big": 14
+   },
+   {
+    "t0": 680,
+    "pol": 0.078,
+    "stayIso": 0.0,
+    "clusters": 109,
+    "big": 11
+   },
+   {
+    "t0": 1220,
+    "pol": 0.073,
+    "stayIso": 0.0,
+    "clusters": 113,
+    "big": 12
+   }
+  ]
+ },
+ {
+  "var": "サイト中心・1個体1票",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.632,
+    "stayIso": 0.0,
+    "clusters": 40,
+    "big": 35
+   },
+   {
+    "t0": 680,
+    "pol": 0.732,
+    "stayIso": 0.0,
+    "clusters": 40,
+    "big": 29
+   },
+   {
+    "t0": 1220,
+    "pol": 0.744,
+    "stayIso": 0.0,
+    "clusters": 37,
+    "big": 47
+   }
+  ]
+ },
+ {
+  "var": "サイト中心・1個体1票",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.574,
+    "stayIso": 0.0,
+    "clusters": 40,
+    "big": 39
+   },
+   {
+    "t0": 680,
+    "pol": 0.634,
+    "stayIso": 0.0,
+    "clusters": 36,
+    "big": 39
+   },
+   {
+    "t0": 1220,
+    "pol": 0.736,
+    "stayIso": 0.0,
+    "clusters": 45,
+    "big": 35
+   }
+  ]
+ },
+ {
+  "var": "サイト中心・1個体1票",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.436,
+    "stayIso": 0.0,
+    "clusters": 56,
+    "big": 64
+   },
+   {
+    "t0": 680,
+    "pol": 0.458,
+    "stayIso": 0.0,
+    "clusters": 56,
+    "big": 28
+   },
+   {
+    "t0": 1220,
+    "pol": 0.598,
+    "stayIso": 0.0,
+    "clusters": 49,
+    "big": 75
+   }
+  ]
+ },
+ {
+  "var": "サイト中心・1個体1票",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.486,
+    "stayIso": 0.0,
+    "clusters": 57,
+    "big": 32
+   },
+   {
+    "t0": 680,
+    "pol": 0.545,
+    "stayIso": 0.0,
+    "clusters": 53,
+    "big": 38
+   },
+   {
+    "t0": 1220,
+    "pol": 0.393,
+    "stayIso": 0.0,
+    "clusters": 50,
+    "big": 40
+   }
+  ]
+ },
+ {
+  "var": "サイト中心・1個体1票",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.245,
+    "stayIso": 0.0,
+    "clusters": 77,
+    "big": 29
+   },
+   {
+    "t0": 680,
+    "pol": 0.107,
+    "stayIso": 0.0,
+    "clusters": 79,
+    "big": 26
+   },
+   {
+    "t0": 1220,
+    "pol": 0.336,
+    "stayIso": 0.0,
+    "clusters": 72,
+    "big": 33
+   }
+  ]
+ },
+ {
+  "var": "サイト中心・1個体1票",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.147,
+    "stayIso": 0.0,
+    "clusters": 73,
+    "big": 35
+   },
+   {
+    "t0": 680,
+    "pol": 0.403,
+    "stayIso": 0.0,
+    "clusters": 66,
+    "big": 61
+   },
+   {
+    "t0": 1220,
+    "pol": 0.325,
+    "stayIso": 0.0,
+    "clusters": 78,
+    "big": 45
+   }
+  ]
+ },
+ {
+  "var": "サイト中心・1個体1票",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.1,
+    "stayIso": 0.0,
+    "clusters": 96,
+    "big": 16
+   },
+   {
+    "t0": 680,
+    "pol": 0.083,
+    "stayIso": 0.0,
+    "clusters": 95,
+    "big": 18
+   },
+   {
+    "t0": 1220,
+    "pol": 0.116,
+    "stayIso": 0.0,
+    "clusters": 89,
+    "big": 24
+   }
+  ]
+ },
+ {
+  "var": "サイト中心・1個体1票",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.08,
+    "stayIso": 0.0,
+    "clusters": 93,
+    "big": 25
+   },
+   {
+    "t0": 680,
+    "pol": 0.166,
+    "stayIso": 0.0,
+    "clusters": 90,
+    "big": 22
+   },
+   {
+    "t0": 1220,
+    "pol": 0.152,
+    "stayIso": 0.0,
+    "clusters": 86,
+    "big": 33
+   }
+  ]
+ },
+ {
+  "var": "1個体1票・留まりあり",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.202,
+    "stayIso": 0.129,
+    "clusters": 21,
+    "big": 50
+   },
+   {
+    "t0": 680,
+    "pol": 0.397,
+    "stayIso": 0.103,
+    "clusters": 20,
+    "big": 71
+   },
+   {
+    "t0": 1220,
+    "pol": 0.453,
+    "stayIso": 0.109,
+    "clusters": 15,
+    "big": 53
+   }
+  ]
+ },
+ {
+  "var": "1個体1票・留まりあり",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.329,
+    "stayIso": 0.188,
+    "clusters": 10,
+    "big": 102
+   },
+   {
+    "t0": 680,
+    "pol": 0.338,
+    "stayIso": 0.134,
+    "clusters": 26,
+    "big": 46
+   },
+   {
+    "t0": 1220,
+    "pol": 0.435,
+    "stayIso": 0.079,
+    "clusters": 18,
+    "big": 53
+   }
+  ]
+ },
+ {
+  "var": "1個体1票・留まりあり",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.17,
+    "stayIso": 0.141,
+    "clusters": 38,
+    "big": 72
+   },
+   {
+    "t0": 680,
+    "pol": 0.27,
+    "stayIso": 0.116,
+    "clusters": 46,
+    "big": 64
+   },
+   {
+    "t0": 1220,
+    "pol": 0.218,
+    "stayIso": 0.113,
+    "clusters": 40,
+    "big": 57
+   }
+  ]
+ },
+ {
+  "var": "1個体1票・留まりあり",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.277,
+    "stayIso": 0.124,
+    "clusters": 43,
+    "big": 58
+   },
+   {
+    "t0": 680,
+    "pol": 0.126,
+    "stayIso": 0.109,
+    "clusters": 47,
+    "big": 58
+   },
+   {
+    "t0": 1220,
+    "pol": 0.164,
+    "stayIso": 0.121,
+    "clusters": 50,
+    "big": 64
+   }
+  ]
+ },
+ {
+  "var": "1個体1票・留まりあり",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.084,
+    "stayIso": 0.132,
+    "clusters": 75,
+    "big": 28
+   },
+   {
+    "t0": 680,
+    "pol": 0.082,
+    "stayIso": 0.146,
+    "clusters": 72,
+    "big": 34
+   },
+   {
+    "t0": 1220,
+    "pol": 0.073,
+    "stayIso": 0.13,
+    "clusters": 77,
+    "big": 37
+   }
+  ]
+ },
+ {
+  "var": "1個体1票・留まりあり",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.063,
+    "stayIso": 0.119,
+    "clusters": 82,
+    "big": 23
+   },
+   {
+    "t0": 680,
+    "pol": 0.099,
+    "stayIso": 0.145,
+    "clusters": 82,
+    "big": 23
+   },
+   {
+    "t0": 1220,
+    "pol": 0.056,
+    "stayIso": 0.167,
+    "clusters": 74,
+    "big": 31
+   }
+  ]
+ },
+ {
+  "var": "1個体1票・留まりあり",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.055,
+    "stayIso": 0.114,
+    "clusters": 67,
+    "big": 22
+   },
+   {
+    "t0": 680,
+    "pol": 0.072,
+    "stayIso": 0.127,
+    "clusters": 60,
+    "big": 32
+   },
+   {
+    "t0": 1220,
+    "pol": 0.063,
+    "stayIso": 0.119,
+    "clusters": 40,
+    "big": 65
+   }
+  ]
+ },
+ {
+  "var": "1個体1票・留まりあり",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.06,
+    "stayIso": 0.148,
+    "clusters": 71,
+    "big": 38
+   },
+   {
+    "t0": 680,
+    "pol": 0.057,
+    "stayIso": 0.122,
+    "clusters": 60,
+    "big": 49
+   },
+   {
+    "t0": 1220,
+    "pol": 0.066,
+    "stayIso": 0.127,
+    "clusters": 66,
+    "big": 64
+   }
+  ]
+ },
+ {
+  "var": "θ・1個体1票",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.794,
+    "stayIso": 0.0,
+    "clusters": 8,
+    "big": 90
+   },
+   {
+    "t0": 680,
+    "pol": 0.849,
+    "stayIso": 0.0,
+    "clusters": 6,
+    "big": 148
+   },
+   {
+    "t0": 1220,
+    "pol": 0.842,
+    "stayIso": 0.0,
+    "clusters": 3,
+    "big": 197
+   }
+  ]
+ },
+ {
+  "var": "θ・1個体1票",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.825,
+    "stayIso": 0.0,
+    "clusters": 10,
+    "big": 186
+   },
+   {
+    "t0": 680,
+    "pol": 0.832,
+    "stayIso": 0.0,
+    "clusters": 5,
+    "big": 120
+   },
+   {
+    "t0": 1220,
+    "pol": 0.837,
+    "stayIso": 0.0,
+    "clusters": 5,
+    "big": 121
+   }
+  ]
+ },
+ {
+  "var": "θ・1個体1票",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.645,
+    "stayIso": 0.0,
+    "clusters": 13,
+    "big": 108
+   },
+   {
+    "t0": 680,
+    "pol": 0.665,
+    "stayIso": 0.0,
+    "clusters": 4,
+    "big": 150
+   },
+   {
+    "t0": 1220,
+    "pol": 0.668,
+    "stayIso": 0.0,
+    "clusters": 5,
+    "big": 151
+   }
+  ]
+ },
+ {
+  "var": "θ・1個体1票",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.626,
+    "stayIso": 0.0,
+    "clusters": 9,
+    "big": 69
+   },
+   {
+    "t0": 680,
+    "pol": 0.659,
+    "stayIso": -1,
+    "clusters": 4,
+    "big": 99
+   },
+   {
+    "t0": 1220,
+    "pol": 0.655,
+    "stayIso": 0.0,
+    "clusters": 2,
+    "big": 198
+   }
+  ]
+ },
+ {
+  "var": "θ・1個体1票",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.377,
+    "stayIso": 0.0,
+    "clusters": 11,
+    "big": 113
+   },
+   {
+    "t0": 680,
+    "pol": 0.434,
+    "stayIso": 0.0,
+    "clusters": 3,
+    "big": 197
+   },
+   {
+    "t0": 1220,
+    "pol": 0.443,
+    "stayIso": 0.0,
+    "clusters": 3,
+    "big": 196
+   }
+  ]
+ },
+ {
+  "var": "θ・1個体1票",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.378,
+    "stayIso": 0.0,
+    "clusters": 13,
+    "big": 42
+   },
+   {
+    "t0": 680,
+    "pol": 0.455,
+    "stayIso": 0.0,
+    "clusters": 6,
+    "big": 87
+   },
+   {
+    "t0": 1220,
+    "pol": 0.455,
+    "stayIso": 0.0,
+    "clusters": 7,
+    "big": 96
+   }
+  ]
+ },
+ {
+  "var": "θ・1個体1票",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.119,
+    "stayIso": 0.0,
+    "clusters": 22,
+    "big": 73
+   },
+   {
+    "t0": 680,
+    "pol": 0.218,
+    "stayIso": 0.0,
+    "clusters": 6,
+    "big": 114
+   },
+   {
+    "t0": 1220,
+    "pol": 0.235,
+    "stayIso": 0.0,
+    "clusters": 3,
+    "big": 113
+   }
+  ]
+ },
+ {
+  "var": "θ・1個体1票",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.154,
+    "stayIso": 0.0,
+    "clusters": 12,
+    "big": 76
+   },
+   {
+    "t0": 680,
+    "pol": 0.225,
+    "stayIso": 0.0,
+    "clusters": 7,
+    "big": 153
+   },
+   {
+    "t0": 1220,
+    "pol": 0.233,
+    "stayIso": 0.0,
+    "clusters": 6,
+    "big": 158
+   }
+  ]
+ },
+ {
+  "var": "速度一致なし（論文2型）",
+  "alpha": 0.3,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.066,
+    "stayIso": 0.0,
+    "clusters": 135,
+    "big": 5
+   },
+   {
+    "t0": 680,
+    "pol": 0.075,
+    "stayIso": 0.0,
+    "clusters": 128,
+    "big": 6
+   },
+   {
+    "t0": 1220,
+    "pol": 0.047,
+    "stayIso": 0.0,
+    "clusters": 126,
+    "big": 6
+   }
+  ]
+ },
+ {
+  "var": "速度一致なし（論文2型）",
+  "alpha": 0.3,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.042,
+    "stayIso": 0.0,
+    "clusters": 131,
+    "big": 7
+   },
+   {
+    "t0": 680,
+    "pol": 0.085,
+    "stayIso": 0.0,
+    "clusters": 130,
+    "big": 7
+   },
+   {
+    "t0": 1220,
+    "pol": 0.137,
+    "stayIso": 0.0,
+    "clusters": 127,
+    "big": 9
+   }
+  ]
+ },
+ {
+  "var": "速度一致なし（論文2型）",
+  "alpha": 0.5,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.054,
+    "stayIso": 0.0,
+    "clusters": 129,
+    "big": 6
+   },
+   {
+    "t0": 680,
+    "pol": 0.068,
+    "stayIso": 0.0,
+    "clusters": 131,
+    "big": 6
+   },
+   {
+    "t0": 1220,
+    "pol": 0.053,
+    "stayIso": 0.0,
+    "clusters": 129,
+    "big": 7
+   }
+  ]
+ },
+ {
+  "var": "速度一致なし（論文2型）",
+  "alpha": 0.5,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.095,
+    "stayIso": 0.0,
+    "clusters": 131,
+    "big": 6
+   },
+   {
+    "t0": 680,
+    "pol": 0.072,
+    "stayIso": 0.0,
+    "clusters": 123,
+    "big": 8
+   },
+   {
+    "t0": 1220,
+    "pol": 0.084,
+    "stayIso": 0.0,
+    "clusters": 129,
+    "big": 7
+   }
+  ]
+ },
+ {
+  "var": "速度一致なし（論文2型）",
+  "alpha": 0.7,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.052,
+    "stayIso": 0.0,
+    "clusters": 130,
+    "big": 7
+   },
+   {
+    "t0": 680,
+    "pol": 0.074,
+    "stayIso": 0.0,
+    "clusters": 132,
+    "big": 6
+   },
+   {
+    "t0": 1220,
+    "pol": 0.057,
+    "stayIso": 0.0,
+    "clusters": 132,
+    "big": 7
+   }
+  ]
+ },
+ {
+  "var": "速度一致なし（論文2型）",
+  "alpha": 0.7,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.114,
+    "stayIso": 0.0,
+    "clusters": 128,
+    "big": 8
+   },
+   {
+    "t0": 680,
+    "pol": 0.107,
+    "stayIso": 0.0,
+    "clusters": 127,
+    "big": 9
+   },
+   {
+    "t0": 1220,
+    "pol": 0.117,
+    "stayIso": 0.0,
+    "clusters": 128,
+    "big": 6
+   }
+  ]
+ },
+ {
+  "var": "速度一致なし（論文2型）",
+  "alpha": 0.9,
+  "seed": 0,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.055,
+    "stayIso": 0.0,
+    "clusters": 123,
+    "big": 8
+   },
+   {
+    "t0": 680,
+    "pol": 0.073,
+    "stayIso": 0.0,
+    "clusters": 121,
+    "big": 8
+   },
+   {
+    "t0": 1220,
+    "pol": 0.075,
+    "stayIso": 0.0,
+    "clusters": 126,
+    "big": 7
+   }
+  ]
+ },
+ {
+  "var": "速度一致なし（論文2型）",
+  "alpha": 0.9,
+  "seed": 1,
+  "seg": [
+   {
+    "t0": 130,
+    "pol": 0.066,
+    "stayIso": 0.0,
+    "clusters": 121,
+    "big": 8
+   },
+   {
+    "t0": 680,
+    "pol": 0.064,
+    "stayIso": 0.0,
+    "clusters": 124,
+    "big": 8
+   },
+   {
+    "t0": 1220,
+    "pol": 0.058,
+    "stayIso": 0.0,
+    "clusters": 121,
+    "big": 9
+   }
+  ]
+ }
+]
